@@ -1,0 +1,30 @@
+.list {
+  list-style-type: none;
+  padding: 0;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;      
+     }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 10px;
+
+    @media (max-width: 768px) {
+     flex-direction: column;      
+    }
+  }
+
+  &__button {
+    max-width: 100px;
+  }
+}
